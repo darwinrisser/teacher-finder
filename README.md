@@ -1,68 +1,36 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Purpose
 
-In the project directory, you can run:
+The intent of this project is two-fold. There are two types of users the app should work for.<br>
+1. Private lesson instructors should be able to use this app to easily add themselves to the job pool for any directors who are seeking teachers for their students.<br>
+2. Directors should be able to easily find private lesson instructors to hire for their programs.
 
-### `npm start`
+### User Features - Lesson Instructors
+1. Be able to create a profile that lists their area of specialization (voice, violin, trumpet, etc.)<br>
+2. Be able to show the area in which they are available to teach <br>
+3. Be able to upload a photo to use as a profile picture<br>
+4. Be able to make connections with other teachers who they know or have worked with in the past<br>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### User Features - Directors
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Be able to search their local area for instructors based on instrument specialization listed on the instructors profile (voice, violin, trumpet, etc.)<br>
+2. Be able to make connections with other teachers who they know or have worked with in the past<br>
+3. Be able to view mutual connections between instructors and other teachers<br>
+4. Be able to add endorsements to an instructors profile<br>
 
-### `npm test`
+### Front-End
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**User: private lesson instructor**
+1. The user should be able to create a profile with information such as a profile picture, short bio, instrument played, location, etc.
+2. The user should be able to see other teachers in their area and make connections, both with private instructors and directors
 
-### `npm run build`
+**User: directors**
+1. The user should be able to create a profile with information such as a profile picture, short bio, school employed at, type of instructor they are looking for, etc.
+2. The user should be able to see other teachers in their area and make connections
+3. The user should be able to search for specific instruments (voice, violin, trumpet, etc.)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Back-End
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Server should connect to a database that stores user profiles with user objects containing information relevant to the front end 
+2. Server should be able to respond to various calls such as GET, POST, and PUT
