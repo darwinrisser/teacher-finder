@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header{
   position: fixed;
   width: 100%;
+  box-shadow: 1px 2px 3px grey;
 }
 
 #homeHeader{
@@ -57,8 +59,10 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: grey;
+  justify-content: flex-start;
+  background-image: url("https://images.unsplash.com/photo-1482627750753-afdba16659ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  width: 100%;
 }
 
 #homeRightSide{
@@ -66,6 +70,36 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: lightgreen;
+  justify-content: flex-start;
+  background-image: url("https://images.unsplash.com/photo-1514213949578-58fe7b8ff146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2704&q=80");
+  background-position: center;
+  width: 100%;
+}
+
+#homeRightSide p{
+  margin: 5em;
+  color: black;
+  font-size: 1.5em;
+}
+
+#homeLeftSide p{
+  margin: 5em;
+  color: white;
+  font-size: 1.5em;
+}
+
+.login{
+  height: 5em;
+  width: 10em;
+  background-color: darkkhaki;
+  font-size: 1em;
+  border: none;
+  border-radius: .5em;
+  box-shadow: 1px 2px 3px grey;
+  cursor: pointer;
+}
+
+.login:hover{
+  height: 5.1em;
+  width: 10.2;
 }
